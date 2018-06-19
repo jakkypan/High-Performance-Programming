@@ -69,4 +69,6 @@ View.isHardwareAccelerated()
 Canvas.isHardwareAccelerated()
 ```
 
+## 引申阅读
 
+[](./屏幕刷新的深度分析.md)
