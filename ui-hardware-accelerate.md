@@ -1,3 +1,5 @@
+API 11后，开始支持硬件加速，在API 14后，系统默认是开启硬件加速的。
+
 ## 硬件加速的级别
 
 硬件加速可以在不同的地方进行开启/关闭，小粒度的将覆盖大粒度的设置。
@@ -12,4 +14,45 @@
 ...>
 </application>
 ```
+
+### Activity
+
+```xml
+<activity android:hardwareAccelerated="false"
+...>
+</activity>
+```
+
+### window
+
+注意这个请求不能保证硬件加速一定会发生。同时这个只能开启，不能关闭由Application或activity开启的硬件加速。
+
+必须在activity或dialog设置content view之前设置。
+
+```java
+Window w = activity.getWindow();
+w.setFlags(WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED, WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED);
+```
+
+### View
+
+```java
+View.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+```
+
+这里是是否使用硬件图层，并不是说开启硬件加速。如果硬件加速没有开启，那么这个硬件图层就无法使用，转成使用软件图层。
+
+### 检测是否开启硬件加速
+
+指示该view是不是attached到开启了硬件加速的window上。即使返回true，也不意味着每次的draw都会进行硬件加速。
+
+```java
+View.isHardwareAccelerated()
+```
+
+这个更加准确
+```java
+Canvas.isHardwareAccelerated()
+```
+
 
