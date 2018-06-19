@@ -42,6 +42,20 @@ View.setLayerType(View.LAYER_TYPE_HARDWARE, null);
 
 这里是是否使用硬件图层，并不是说开启硬件加速。如果硬件加速没有开启，那么这个硬件图层就无法使用，转成使用软件图层。
 
+> 建议用法
+
+在动画启动前，开启硬件层，在动画结束后，立即关闭，释放被占用的资源。
+
+```java
+view.setLayerType(View.LAYER_TYPE_HARDWARE, null)
+val animator:ObjectAnimator = ObjectAnimator.ofFloat(view, "rotationX", 180)
+animator.addListener(AnimatorListenerAdapter() {
+    override fun onAnimationEnd(animation: Animator) {
+         view.setLayerType(View.LAYER_TYPE_NONE, null)
+    }
+})
+```
+
 ### 检测是否开启硬件加速
 
 指示该view是不是attached到开启了硬件加速的window上。即使返回true，也不意味着每次的draw都会进行硬件加速。
