@@ -9,6 +9,16 @@ DecorView为我们设置了默认背景，根据theme的不同会不同。但是
 </style>
 ```
 
+或者直接在代码中进行处理：
+
+```java
+@Override
+public void onWindowFocusChanged(boolean hasFocus) {
+    if (hasFocus) 
+        getWindow().setBackgroundDrawable(null);
+}
+```
+
 我们可以更进一步，我们可以将activity的背景放到窗口的DecorView上进行绘制，这样做的依据DecorView的背景是早于其他任何布局的，这样用户可以更早的看到我的activity的背景。
 
 具体做法很简单，就是将`android:windowBackground`替换成activity的背景即可：
