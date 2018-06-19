@@ -8,4 +8,4 @@
 
 ### lesson2：硬件加速
 
-
+[硬件加速](./ui-hardware-accelerate.md)
