@@ -64,11 +64,16 @@ animator.addListener(AnimatorListenerAdapter() {
 View.isHardwareAccelerated()
 ```
 
-这个更加准确
+这个更加准确，如果要真的判断的话，建议采用这个方法。
 ```java
 Canvas.isHardwareAccelerated()
 ```
 
+## 关于硬件加速使用过程中的建议
+
+* 减少布局中View的数量，这个很好理解，view越多绘制时消耗越多
+* 
+
 ## 引申阅读
 
-[](./屏幕刷新的深度分析.md)
+[屏幕刷新的深度分析](./屏幕刷新的深度分析.md)
