@@ -4,4 +4,4 @@
 
 ### lesson1：移除activity的背景
 
-[](./ui-remove-default-background.md)
+[移除activity的背景](./ui-remove-default-background.md)
