@@ -74,10 +74,9 @@ Canvas.isHardwareAccelerated()
 * 减少布局中View的数量，这个很好理解，view越多绘制时消耗越多
 * 避免不必要的绘制，特别是被覆盖的view，尽量移除掉，否则会造成不必要的叠加
 * 不要在draw()中创建实例对象，如Paint、Path对象，这会导致GC频繁
-* 不要频繁的修改bitmap，
-* 不要频繁的
-* 不要频繁的修改bitmap，
-* 不要频繁的修改bitmap，
+* 不要频繁的修改bitmap
+* 不要频繁的修改形状（形状的改变会用到GPU纹理的遮罩，每当修改时，都创建一个新的遮罩）
+* 小心使用alpha，原因是它需要更多的渲染缓冲填充率，所以建议开启硬件图层。android 23开始的setAplha()默认是开启使用`LAYER_TYPE_HARDWARE`图层的，所以对于targetSDK大于23的可以不用开启
 
 ## 引申阅读
 
