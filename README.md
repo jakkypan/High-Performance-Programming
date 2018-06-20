@@ -1,6 +1,6 @@
 # High-Performance-Programming
 
-## UI篇 —— 打造高性能布局
+## UI篇 — 打造高性能布局
 
 * [lesson1：移除activity的背景](./ui-remove-default-background.md)
 
