@@ -8,4 +8,4 @@
 
 * [lesson3：关于多窗口的性能研究](./ui-multi-windows.md)
 
-* [lesson4：RelativeLayout和LinearLayout如何抉择](./ui-relative-linear-windows.md)
+* [lesson4：View的绘制流程](./View的绘制流程.md)
