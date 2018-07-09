@@ -9,3 +9,7 @@
 * [lesson3：关于多窗口的性能研究](./ui-multi-windows.md)
 
 * [lesson4：View的绘制流程](./View的绘制流程.md)
+
+* [lesson5：include和merge](./include和merge.md)
+
+* [lesson6：关于ViewStub](./ViewStub.md)
