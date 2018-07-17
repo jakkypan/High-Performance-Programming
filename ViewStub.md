@@ -311,5 +311,5 @@ public class PhoneLayoutInflater extends LayoutInflater {
 }
 ```
 
-LayoutInflater还有个实现类`AsyncLayoutInflater`，它完成异步加载视图的功能，这个具体见：[AsyncLayoutInflater分析](.AsyncLayoutInflater分析.md)
+LayoutInflater还有个实现类`AsyncLayoutInflater`，它完成异步加载视图的功能，这个具体见：[AsyncLayoutInflater分析](./AsyncLayoutInflater分析.md)
 
