@@ -13,3 +13,5 @@
 * [lesson5：include和merge](./include和merge.md)
 
 * [lesson6：关于ViewStub](./ViewStub.md)
+
+* [lesson7：ListView的优化](./ListView的优化.md)
