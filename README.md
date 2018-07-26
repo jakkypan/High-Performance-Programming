@@ -15,3 +15,7 @@
 * [lesson6：关于ViewStub](./ViewStub.md)
 
 * [lesson7：ListView的优化](./ListView的优化.md)
+
+* [lesson8：TextView性能优化](./TextView性能优化.md)
+
+* [lesson9：Canvas.clipRect()优化绘制](./Canvas.clipRect优化绘制.md)
