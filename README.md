@@ -19,3 +19,5 @@
 * [lesson8：TextView性能优化](./TextView性能优化.md)
 
 * [lesson9：Canvas.clipRect()优化绘制](./Canvas.clipRect优化绘制.md)
+
+* [lesson10：使用Vector来替代Icon](./Vector的使用.md)
